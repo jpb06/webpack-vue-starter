@@ -27,7 +27,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin(),
+        new VueLoaderPlugin(), // necessary for vue loader to work
         new webpack.HotModuleReplacementPlugin(),
         new htmlWebpackPlugin({
             filename: 'index.html',
