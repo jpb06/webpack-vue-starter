@@ -7,8 +7,10 @@ const {
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const utils = require('./utils')
+const path = require('path')
 
 module.exports = {
+  entry: path.resolve(__dirname, './../src/index.js'),
   mode: 'development',
   devServer: {
     hot: true
@@ -33,6 +35,12 @@ module.exports = {
     }
     ]
   },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': path.resolve(__dirname, './../src')
+    }
+  },
   plugins: [
     new VueLoaderPlugin(), // necessary for vue loader to work
     new webpack.HotModuleReplacementPlugin(),
@@ -40,7 +48,7 @@ module.exports = {
       filename: 'index.html',
       template: 'index.html',
       inject: true
-    }), 
+    }),
     new CopyWebpackPlugin([{ // static content
       from: utils.resolve('static/img'),
       to: utils.resolve('dist/static/img'),
