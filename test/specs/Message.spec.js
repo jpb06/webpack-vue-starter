@@ -1,7 +1,7 @@
 import { shallow } from '@vue/test-utils'
 import Message from '@/components/Message.vue'
 
-describe('Message', () => {
+describe('Message.vue', () => {
   it('renders props.msg when passed', () => {
     const msg = 'new message'
     const wrapper = shallow(Message, {
