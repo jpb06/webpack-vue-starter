@@ -4,8 +4,8 @@ Just some sandboxing to understand how to properly use webpack and to build some
 
 ## Some highlights
 
-- Webpack 4.6 - https://webpack.js.org/concepts/
-- Vuejs 2.5 - https://vuejs.org/v2/guide/
+- Webpack 4.6 - <https://webpack.js.org/concepts/>
+- Vuejs 2.5 - <https://vuejs.org/v2/guide/>
 
 ### Webpack loaders
 
