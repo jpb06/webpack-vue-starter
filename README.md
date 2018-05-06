@@ -75,7 +75,7 @@ Used facebook jest for that one.
 npm install --save-dev jest babel-jest vue-jest jest-serializer-vue @vue/test-utils
 ```
 
-package.json
+#### package.json
 
 ```jest configuration at document root
 "jest": {
@@ -102,11 +102,13 @@ package.json
 }
 ```
 
+scripts section
+
 ```scripts section
 "test": "jest"
 ```
 
-.babelrc
+#### .babelrc
 
 ```Document root
 "env": {
@@ -118,7 +120,7 @@ package.json
 }
 ```
 
-.eslintrc.js
+#### .eslintrc.js
 
 ```Exported object properties
 env: {
